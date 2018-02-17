@@ -1,0 +1,27 @@
+<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    Location Detail
+                </h4>
+            </div>
+            <div class="modal-body">
+                    <div class="form-group input-group-lg">
+
+                        <label class="control-label" for="name">Full name:</label>
+                        <label class="form-control">{{place.name}}</label>
+                        
+                        <label class="control-label" for="name">Display name:</label>
+                        <label class="form-control">{{place.getDisplayName()}}</label>
+                        
+                        <label class="control-label" for="name">Temperature:</label>
+                        <label class="form-control">{{place.currentWeather.temperature}}°C</label>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" ng-click="close()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
